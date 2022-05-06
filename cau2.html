@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 7, 9, -1];
+        function findIndex(number, arr) {
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] == number) {
+                    return `số cần tìm nằm ở vị trí ${i}`;
+                }
+            }
+            return ('Số này không xuất hiện trong mảng');
+        }
+        let a = Number(prompt("Nhập số cần tìm"))
+        alert(findIndex(a, arr));
+    </script>
+</body>
+
+</html>
